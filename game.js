@@ -45,15 +45,15 @@ function handleTileSelection(tile) {
       let randomTile = Math.floor(Math.random() * availableTiles.length);
       availableTiles[randomTile].classList.add("highlighted");
     }
-  } else {
+  //} else {
     // Game over!
-    gameOver = true;
-    alert("Game over! Your score was: " + score);
+  //  gameOver = true;
+  //  alert("Game over! Your score was: " + score);
   }
 }
 
 // Set up a timer to periodically update the highlighted tile
-let speed = 400; // Start with a 1 second delay
+let speed = 500; // Start with a 1 second delay
 setInterval(function() {
   // Check if the game is over
   if (gameOver) {
